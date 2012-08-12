@@ -13,4 +13,6 @@ A few of the more interesting items:
 - Matrix inversion (though a sane person doesn't usually explicity invert a matrix).
 - A benchmark based on math instructions.
 - A program to make my physical homework less painful by automating the calculation of significant figures.
-
+- Delete a whole directory tree (which DOS didn't have at the time).
+- Synchronize directories, like rsync but not as good.
+- Create source files for POVRAY which render a rotating strand of DNA.

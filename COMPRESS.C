@@ -1,16 +1,25 @@
-/*  compress.c
 
-contains the interface/command line code, and
-general code for huffman based compression
-program
+/* Includes */
+#include "stdio.h"
+#include "stdlib.h"
+#include "huffman.h"
 
-author:  Bryce Lobdell
-Date:  4/9/99
+/* Macros */
+#define uchar unsigned char
+#define uint unsigned int
+#define ulong unsigned long
 
-*/
+#define BLOCKSIZE 512
 
 
 
+main(int numargs,char *args[])
+{
+FILE *infile,*outfile;
+int ret_val;
 
+infile=fopen(args[1],"rb");
+outfile=fopen(args[2],"wb");
 
-#include <stdio.h>
+huffman(infile,outfile);
+}
